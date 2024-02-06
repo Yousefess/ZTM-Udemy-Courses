@@ -10,4 +10,4 @@ This repository contains the code for the [PyTorch for Deep Learning in 2024](ht
 
 | No. | Sections | My Code | Original Code | Exercises |
 | :---: | :--------: | :-------: | :-------------: | :---------: |
-| 1 | [PyTorch Fundamentals](https://github.com/Yousefess/PyTorchforDeepLearning/tree/main/00%20PyTorch%20Fundamentals) | [Code](https://github.com/Yousefess/PyTorchforDeepLearning/blob/main/00%20PyTorch%20Fundamentals/pytorch_fundamentals.ipynb) | [Original](https://github.com/Yousefess/PyTorchforDeepLearning/tree/main/00%20PyTorch%20Fundamentals/original%20code) | [exercises](https://github.com/Yousefess/PyTorchforDeepLearning/tree/main/00%20PyTorch%20Fundamentals/exercises)
+| 00 | [PyTorch Fundamentals](https://github.com/Yousefess/PyTorchforDeepLearning/tree/main/00%20PyTorch%20Fundamentals) | [Code](https://github.com/Yousefess/PyTorchforDeepLearning/blob/main/00%20PyTorch%20Fundamentals/pytorch_fundamentals.ipynb) | [Original](https://github.com/Yousefess/PyTorchforDeepLearning/tree/main/00%20PyTorch%20Fundamentals/original%20code) | [exercises](https://github.com/Yousefess/PyTorchforDeepLearning/tree/main/00%20PyTorch%20Fundamentals/exercises)

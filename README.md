@@ -12,6 +12,9 @@ This repository contains the code for the 3 course that i have taken by Andrei N
 
 ## Table of Contents
 
+### PyTorch for Deep Learning in 2024
+
 | No. | Sections | My Code | Original Code | Exercises |
 | :---: | :--------: | :-------: | :-------------: | :---------: |
-| 00 | [PyTorch Fundamentals](https://github.com/Yousefess/PyTorchforDeepLearning/tree/main/00%20PyTorch%20Fundamentals) | [Code](https://github.com/Yousefess/PyTorchforDeepLearning/blob/main/00%20PyTorch%20Fundamentals/pytorch_fundamentals.ipynb) | [Original](https://github.com/Yousefess/PyTorchforDeepLearning/tree/main/00%20PyTorch%20Fundamentals/original%20code) | [exercises](https://github.com/Yousefess/PyTorchforDeepLearning/tree/main/00%20PyTorch%20Fundamentals/exercises)
+| 00 | [PyTorch Fundamentals](https://github.com/Yousefess/PyTorchforDeepLearning/tree/main/02%20PyTorch%20for%20Deep%20Learning%20in%202024/00%20PyTorch%20Fundamentals) | [Code](https://github.com/Yousefess/PyTorchforDeepLearning/blob/main/02%20PyTorch%20for%20Deep%20Learning%20in%202024/00%20PyTorch%20Fundamentals/pytorch_fundamentals.ipynb) | [Original](https://github.com/Yousefess/PyTorchforDeepLearning/tree/main/02%20PyTorch%20for%20Deep%20Learning%20in%202024/00%20PyTorch%20Fundamentals/original%20code) | [Exercises](https://github.com/Yousefess/PyTorchforDeepLearning/tree/main/02%20PyTorch%20for%20Deep%20Learning%20in%202024/00%20PyTorch%20Fundamentals/exercises)
+

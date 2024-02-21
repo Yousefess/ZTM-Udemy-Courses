@@ -69,7 +69,7 @@ In your travels, you'll see many code repositories for PyTorch-based ML projects
 
 For example, you might be instructed to run code like the following in a terminal/command line to train a model:
 
-```
+```bash
 python train.py --model MODEL_NAME --batch_size BATCH_SIZE --lr LEARNING_RATE --num_epochs NUM_EPOCHS
 ```
 
@@ -85,7 +85,7 @@ You can set these to whatever values you like and if they're compatible with `tr
 
 For example, let's say we wanted to train our TinyVGG model from notebook 04 for 10 epochs with a batch size of 32 and a learning rate of 0.001:
 
-```
+```bash
 python train.py --model tinyvgg --batch_size 32 --lr 0.001 --num_epochs 10
 ```
 
@@ -127,7 +127,7 @@ By the end of this section we want to have two things:
 1. The ability to train the model we built in notebook 04 (Food Vision Mini) with one line of code on the command line: `python train.py`.
 2. A directory structure of reusable Python scripts, such as:
 
-```
+```bash
 going_modular/
 ├── going_modular/
 │   ├── data_setup.py
@@ -222,7 +222,7 @@ os.remove(data_path / "pizza_steak_sushi.zip")
 
 This results in having a file called `data` that contains another directory called `pizza_steak_sushi` with images of pizza, steak and sushi in standard image classification format.
 
-```
+```bash
 data/
 └── pizza_steak_sushi/
     ├── train/
@@ -699,15 +699,17 @@ In our `train.py` file, we'll combine all of the functionality of the other Pyth
 
 This way we can train a PyTorch model using a single line of code on the command line:
 
-```
+``` bash
 python train.py
 ```
 
 To create `train.py` we'll go through the following steps:
 
 1. Import the various dependencies, namely `torch`, `os`, `torchvision.transforms` and all of the scripts from the `going_modular` directory, `data_setup`, `engine`, `model_builder`, `utils`.
-  * **Note:** Since `train.py` will be *inside* the `going_modular` directory, we can import the other modules via `import ...` rather than `from going_modular import ...`.
-2. Setup various hyperparameters such as batch size, number of epochs, learning rate and number of hidden units (these could be set in the future via [Python's `argparse`](https://docs.python.org/3/library/argparse.html)).
+
+* **Note:** Since `train.py` will be *inside* the `going_modular` directory, we can import the other modules via `import ...` rather than `from going_modular import ...`.
+
+2. Setup various hyperparameter such as batch size, number of epochs, learning rate and number of hidden units (these could be set in the future via [Python's `argparse`](https://docs.python.org/3/library/argparse.html)).
 3. Setup the training and test directories.
 4. Setup device-agnostic code.
 5. Create the necessary data transforms.
@@ -789,7 +791,7 @@ Woohoo!
 
 Now we can train a PyTorch model by running the following line on the command line:
 
-```
+``` bash
 python train.py
 ```
 
@@ -797,7 +799,7 @@ Doing this will leverage all of the other code scripts we've created.
 
 And if we wanted to, we could adjust our `train.py` file to use argument flag inputs with Python's `argparse` module, this would allow us to provide different hyperparameter settings like previously discussed:
 
-```
+```bash
 python train.py --model MODEL_NAME --batch_size BATCH_SIZE --lr LEARNING_RATE --num_epochs NUM_EPOCHS
 ```
 
@@ -807,7 +809,7 @@ python train.py --model MODEL_NAME --batch_size BATCH_SIZE --lr LEARNING_RATE --
 
 * [Exercise template notebook for 05](https://github.com/mrdbourke/pytorch-deep-learning/blob/main/extras/exercises/05_pytorch_going_modular_exercise_template.ipynb)
 * [Example solutions notebook for 05](https://github.com/mrdbourke/pytorch-deep-learning/blob/main/extras/solutions/05_pytorch_going_modular_exercise_solutions.ipynb)
-    * Live coding run through of [solutions notebook for 05 on YouTube](https://youtu.be/ijgFhMK3pp4)
+  * Live coding run through of [solutions notebook for 05 on YouTube](https://youtu.be/ijgFhMK3pp4)
 
 **Exercises:**
 

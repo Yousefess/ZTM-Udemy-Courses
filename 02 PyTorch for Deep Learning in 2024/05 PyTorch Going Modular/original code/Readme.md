@@ -1,4 +1,4 @@
-[View Source Code](https://github.com/mrdbourke/pytorch-deep-learning/blob/main/05_pytorch_going_modular.md) | [View Slides](https://github.com/mrdbourke/pytorch-deep-learning/blob/main/slides/05_pytorch_going_modular.pdf) 
+[View Source Code](https://github.com/mrdbourke/pytorch-deep-learning/blob/main/05_pytorch_going_modular.md) | [View Slides](https://github.com/mrdbourke/pytorch-deep-learning/blob/main/slides/05_pytorch_going_modular.pdf)
 
 # 05. PyTorch Going Modular
 
@@ -73,7 +73,7 @@ For example, you might be instructed to run code like the following in a termina
 python train.py --model MODEL_NAME --batch_size BATCH_SIZE --lr LEARNING_RATE --num_epochs NUM_EPOCHS
 ```
 
-<img src="https://raw.githubusercontent.com/mrdbourke/pytorch-deep-learning/main/images/05-python-train-command-line-annotated.png" alt="command line call for training a PyTorch model with different hyperparameters" width=1000/> 
+<img src="https://raw.githubusercontent.com/mrdbourke/pytorch-deep-learning/main/images/05-python-train-command-line-annotated.png" alt="command line call for training a PyTorch model with different hyperparameters" width=1000/>
 
 *Running a PyTorch `train.py` script on the command line with various hyperparameter settings.*
 
@@ -106,7 +106,7 @@ Doing this will save us writing the same code over and over again.
 There are two notebooks for this section:
 
 1. [**05. Going Modular: Part 1 (cell mode)**](https://github.com/mrdbourke/pytorch-deep-learning/blob/main/going_modular/05_pytorch_going_modular_cell_mode.ipynb) - this notebook is run as a traditional Jupyter Notebook/Google Colab notebook and is a condensed version of [notebook 04](https://www.learnpytorch.io/04_pytorch_custom_datasets/).
-2. [**05. Going Modular: Part 2 (script mode)**](https://github.com/mrdbourke/pytorch-deep-learning/blob/main/going_modular/05_pytorch_going_modular_script_mode.ipynb) - this notebook is the same as number 1 but with added functionality to turn each of the major sections into Python scripts, such as, `data_setup.py` and `train.py`. 
+2. [**05. Going Modular: Part 2 (script mode)**](https://github.com/mrdbourke/pytorch-deep-learning/blob/main/going_modular/05_pytorch_going_modular_script_mode.ipynb) - this notebook is the same as number 1 but with added functionality to turn each of the major sections into Python scripts, such as, `data_setup.py` and `train.py`.
 
 The text in this document focuses on the code cells 05. Going Modular: Part 2 (script mode), the ones with `%%writefile ...` at the top.
 
@@ -125,7 +125,7 @@ If you run each notebook side-by-side you'll see how they differ and that's wher
 By the end of this section we want to have two things:
 
 1. The ability to train the model we built in notebook 04 (Food Vision Mini) with one line of code on the command line: `python train.py`.
-2. A directory structure of reusable Python scripts, such as: 
+2. A directory structure of reusable Python scripts, such as:
 
 ```
 going_modular/
@@ -172,7 +172,7 @@ All of the materials for this course [are available on GitHub](https://github.co
 
 If you run into trouble, you can ask a question on the course [GitHub Discussions page](https://github.com/mrdbourke/pytorch-deep-learning/discussions).
 
-And of course, there's the [PyTorch documentation](https://pytorch.org/docs/stable/index.html) and [PyTorch developer forums](https://discuss.pytorch.org/), a very helpful place for all things PyTorch. 
+And of course, there's the [PyTorch documentation](https://pytorch.org/docs/stable/index.html) and [PyTorch developer forums](https://discuss.pytorch.org/), a very helpful place for all things PyTorch.
 
 ## 0. Cell mode vs. script mode
 
@@ -188,7 +188,7 @@ Getting the data in each of the 05 notebooks happens the same as in [notebook 04
 
 A call is made to GitHub via Python's `requests` module to download a `.zip` file and unzip it.
 
-```python 
+```python
 import os
 import requests
 import zipfile
@@ -198,13 +198,13 @@ from pathlib import Path
 data_path = Path("data/")
 image_path = data_path / "pizza_steak_sushi"
 
-# If the image folder doesn't exist, download it and prepare it... 
+# If the image folder doesn't exist, download it and prepare it...
 if image_path.is_dir():
     print(f"{image_path} directory exists.")
 else:
     print(f"Did not find {image_path} directory, creating one...")
     image_path.mkdir(parents=True, exist_ok=True)
-    
+
 # Download pizza, steak, sushi data
 with open(data_path / "pizza_steak_sushi.zip", "wb") as f:
     request = requests.get("https://github.com/mrdbourke/pytorch-deep-learning/raw/main/data/pizza_steak_sushi.zip")
@@ -213,7 +213,7 @@ with open(data_path / "pizza_steak_sushi.zip", "wb") as f:
 
 # Unzip pizza, steak, sushi data
 with zipfile.ZipFile(data_path / "pizza_steak_sushi.zip", "r") as zip_ref:
-    print("Unzipping pizza, steak, sushi data...") 
+    print("Unzipping pizza, steak, sushi data...")
     zip_ref.extractall(image_path)
 
 # Remove zip file
@@ -248,12 +248,12 @@ Once we've got data, we can then turn it into PyTorch `Dataset`'s and `DataLoade
 
 We convert the useful `Dataset` and `DataLoader` creation code into a function called `create_dataloaders()`.
 
-And we write it to file using the line `%%writefile going_modular/data_setup.py`. 
+And we write it to file using the line `%%writefile going_modular/data_setup.py`.
 
 ```py title="data_setup.py"
 %%writefile going_modular/data_setup.py
 """
-Contains functionality for creating PyTorch DataLoaders for 
+Contains functionality for creating PyTorch DataLoaders for
 image classification data.
 """
 import os
@@ -264,10 +264,10 @@ from torch.utils.data import DataLoader
 NUM_WORKERS = os.cpu_count()
 
 def create_dataloaders(
-    train_dir: str, 
-    test_dir: str, 
-    transform: transforms.Compose, 
-    batch_size: int, 
+    train_dir: str,
+    test_dir: str,
+    transform: transforms.Compose,
+    batch_size: int,
     num_workers: int=NUM_WORKERS
 ):
   """Creates training and testing DataLoaders.
@@ -343,14 +343,14 @@ Let's put our `TinyVGG()` model class into a script with the line `%%writefile g
 Contains PyTorch model code to instantiate a TinyVGG model.
 """
 import torch
-from torch import nn 
+from torch import nn
 
 class TinyVGG(nn.Module):
   """Creates the TinyVGG architecture.
 
   Replicates the TinyVGG architecture from the CNN explainer website in PyTorch.
   See the original architecture here: https://poloclub.github.io/cnn-explainer/
-  
+
   Args:
     input_shape: An integer indicating number of input channels.
     hidden_units: An integer indicating number of hidden units between layers.
@@ -359,13 +359,13 @@ class TinyVGG(nn.Module):
   def __init__(self, input_shape: int, hidden_units: int, output_shape: int) -> None:
       super().__init__()
       self.conv_block_1 = nn.Sequential(
-          nn.Conv2d(in_channels=input_shape, 
-                    out_channels=hidden_units, 
-                    kernel_size=3, 
-                    stride=1, 
-                    padding=0),  
+          nn.Conv2d(in_channels=input_shape,
+                    out_channels=hidden_units,
+                    kernel_size=3,
+                    stride=1,
+                    padding=0),
           nn.ReLU(),
-          nn.Conv2d(in_channels=hidden_units, 
+          nn.Conv2d(in_channels=hidden_units,
                     out_channels=hidden_units,
                     kernel_size=3,
                     stride=1,
@@ -383,12 +383,12 @@ class TinyVGG(nn.Module):
       )
       self.classifier = nn.Sequential(
           nn.Flatten(),
-          # Where did this in_features shape come from? 
+          # Where did this in_features shape come from?
           # It's because each layer of our network compresses and changes the shape of our inputs data.
           nn.Linear(in_features=hidden_units*13*13,
                     out_features=output_shape)
       )
-    
+
   def forward(self, x: torch.Tensor):
       x = self.conv_block_1(x)
       x = self.conv_block_2(x)
@@ -408,11 +408,11 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 # Instantiate an instance of the model from the "model_builder.py" script
 torch.manual_seed(42)
 model = model_builder.TinyVGG(input_shape=3,
-                              hidden_units=10, 
+                              hidden_units=10,
                               output_shape=len(class_names)).to(device)
 ```
 
-## 4. Creating `train_step()` and `test_step()` functions and `train()` to combine them  
+## 4. Creating `train_step()` and `test_step()` functions and `train()` to combine them
 
 We wrote several training functions in [notebook 04](https://www.learnpytorch.io/04_pytorch_custom_datasets/#75-create-train-test-loop-functions):
 
@@ -432,9 +432,9 @@ import torch
 from tqdm.auto import tqdm
 from typing import Dict, List, Tuple
 
-def train_step(model: torch.nn.Module, 
-               dataloader: torch.utils.data.DataLoader, 
-               loss_fn: torch.nn.Module, 
+def train_step(model: torch.nn.Module,
+               dataloader: torch.utils.data.DataLoader,
+               loss_fn: torch.nn.Module,
                optimizer: torch.optim.Optimizer,
                device: torch.device) -> Tuple[float, float]:
   """Trains a PyTorch model for a single epoch.
@@ -453,15 +453,15 @@ def train_step(model: torch.nn.Module,
   Returns:
     A tuple of training loss and training accuracy metrics.
     In the form (train_loss, train_accuracy). For example:
-    
+
     (0.1112, 0.8743)
   """
   # Put model in train mode
   model.train()
-  
+
   # Setup train loss and train accuracy values
   train_loss, train_acc = 0, 0
-  
+
   # Loop through data loader data batches
   for batch, (X, y) in enumerate(dataloader):
       # Send data to target device
@@ -472,7 +472,7 @@ def train_step(model: torch.nn.Module,
 
       # 2. Calculate  and accumulate loss
       loss = loss_fn(y_pred, y)
-      train_loss += loss.item() 
+      train_loss += loss.item()
 
       # 3. Optimizer zero grad
       optimizer.zero_grad()
@@ -487,13 +487,13 @@ def train_step(model: torch.nn.Module,
       y_pred_class = torch.argmax(torch.softmax(y_pred, dim=1), dim=1)
       train_acc += (y_pred_class == y).sum().item()/len(y_pred)
 
-  # Adjust metrics to get average loss and accuracy per batch 
+  # Adjust metrics to get average loss and accuracy per batch
   train_loss = train_loss / len(dataloader)
   train_acc = train_acc / len(dataloader)
   return train_loss, train_acc
 
-def test_step(model: torch.nn.Module, 
-              dataloader: torch.utils.data.DataLoader, 
+def test_step(model: torch.nn.Module,
+              dataloader: torch.utils.data.DataLoader,
               loss_fn: torch.nn.Module,
               device: torch.device) -> Tuple[float, float]:
   """Tests a PyTorch model for a single epoch.
@@ -510,41 +510,41 @@ def test_step(model: torch.nn.Module,
   Returns:
     A tuple of testing loss and testing accuracy metrics.
     In the form (test_loss, test_accuracy). For example:
-    
+
     (0.0223, 0.8985)
   """
   # Put model in eval mode
-  model.eval() 
-  
+  model.eval()
+
   # Setup test loss and test accuracy values
   test_loss, test_acc = 0, 0
-  
+
   # Turn on inference context manager
   with torch.inference_mode():
       # Loop through DataLoader batches
       for batch, (X, y) in enumerate(dataloader):
           # Send data to target device
           X, y = X.to(device), y.to(device)
-  
+
           # 1. Forward pass
           test_pred_logits = model(X)
 
           # 2. Calculate and accumulate loss
           loss = loss_fn(test_pred_logits, y)
           test_loss += loss.item()
-          
+
           # Calculate and accumulate accuracy
           test_pred_labels = test_pred_logits.argmax(dim=1)
           test_acc += ((test_pred_labels == y).sum().item()/len(test_pred_labels))
-          
-  # Adjust metrics to get average loss and accuracy per batch 
+
+  # Adjust metrics to get average loss and accuracy per batch
   test_loss = test_loss / len(dataloader)
   test_acc = test_acc / len(dataloader)
   return test_loss, test_acc
 
-def train(model: torch.nn.Module, 
-          train_dataloader: torch.utils.data.DataLoader, 
-          test_dataloader: torch.utils.data.DataLoader, 
+def train(model: torch.nn.Module,
+          train_dataloader: torch.utils.data.DataLoader,
+          test_dataloader: torch.utils.data.DataLoader,
           optimizer: torch.optim.Optimizer,
           loss_fn: torch.nn.Module,
           epochs: int,
@@ -568,17 +568,17 @@ def train(model: torch.nn.Module,
 
   Returns:
     A dictionary of training and testing loss as well as training and
-    testing accuracy metrics. Each metric has a value in a list for 
+    testing accuracy metrics. Each metric has a value in a list for
     each epoch.
     In the form: {train_loss: [...],
                   train_acc: [...],
                   test_loss: [...],
-                  test_acc: [...]} 
-    For example if training for epochs=2: 
+                  test_acc: [...]}
+    For example if training for epochs=2:
                  {train_loss: [2.0616, 1.0537],
                   train_acc: [0.3945, 0.3945],
                   test_loss: [1.2641, 1.5706],
-                  test_acc: [0.3400, 0.2973]} 
+                  test_acc: [0.3400, 0.2973]}
   """
   # Create empty results dictionary
   results = {"train_loss": [],
@@ -586,7 +586,7 @@ def train(model: torch.nn.Module,
       "test_loss": [],
       "test_acc": []
   }
-  
+
   # Loop through training and testing steps for a number of epochs
   for epoch in tqdm(range(epochs)):
       train_loss, train_acc = train_step(model=model,
@@ -598,7 +598,7 @@ def train(model: torch.nn.Module,
           dataloader=test_dataloader,
           loss_fn=loss_fn,
           device=device)
-      
+
       # Print out what's happening
       print(
           f"Epoch: {epoch+1} | "
@@ -636,7 +636,7 @@ Since we've written the code to save a model a few times now in previous noteboo
 
 It's common practice to store helper functions in a file called `utils.py` (short for utilities).
 
-Let's save our `save_model()` function to a file called `utils.py` with the line `%%writefile going_modular/utils.py`: 
+Let's save our `save_model()` function to a file called `utils.py` with the line `%%writefile going_modular/utils.py`:
 
 ```python title="utils.py"
 %%writefile going_modular/utils.py
@@ -656,7 +656,7 @@ def save_model(model: torch.nn.Module,
     target_dir: A directory for saving the model to.
     model_name: A filename for the saved model. Should include
       either ".pth" or ".pt" as the file extension.
-  
+
   Example usage:
     save_model(model=model_0,
                target_dir="models",
@@ -666,7 +666,7 @@ def save_model(model: torch.nn.Module,
   target_dir_path = Path(target_dir)
   target_dir_path.mkdir(parents=True,
                         exist_ok=True)
-  
+
   # Create model save path
   assert model_name.endswith(".pth") or model_name.endswith(".pt"), "model_name should end with '.pt' or '.pth'"
   model_save_path = target_dir_path / model_name
@@ -715,7 +715,7 @@ To create `train.py` we'll go through the following steps:
 7. Create the model using `model_builder.py`.
 8. Setup the loss function and optimizer.
 9. Train the model using `engine.py`.
-10. Save the model using `utils.py`. 
+10. Save the model using `utils.py`.
 
 And we can create the file from a notebook cell using the line `%%writefile going_modular/train.py`:
 
@@ -823,14 +823,14 @@ python train.py --model MODEL_NAME --batch_size BATCH_SIZE --lr LEARNING_RATE --
         * Number of hidden units in the TinyVGG model
     * Keep the default values for each of the above arguments as what they already are (as in notebook 05).
     * For example, you should be able to run something similar to the following line to train a TinyVGG model with a learning rate of 0.003 and a batch size of 64 for 20 epochs: `python train.py --learning_rate 0.003 --batch_size 64 --num_epochs 20`.
-    * **Note:** Since `train.py` leverages the other scripts we created in section 05, such as, `model_builder.py`, `utils.py` and `engine.py`, you'll have to make sure they're available to use too. You can find these in the [`going_modular` folder on the course GitHub](https://github.com/mrdbourke/pytorch-deep-learning/tree/main/going_modular/going_modular). 
+    * **Note:** Since `train.py` leverages the other scripts we created in section 05, such as, `model_builder.py`, `utils.py` and `engine.py`, you'll have to make sure they're available to use too. You can find these in the [`going_modular` folder on the course GitHub](https://github.com/mrdbourke/pytorch-deep-learning/tree/main/going_modular/going_modular).
 3. Create a script to predict (such as `predict.py`) on a target image given a file path with a saved model.
     * For example, you should be able to run the command `python predict.py some_image.jpeg` and have a trained PyTorch model predict on the image and return its prediction.
-    * To see example prediction code, check out the [predicting on a custom image section in notebook 04](https://www.learnpytorch.io/04_pytorch_custom_datasets/#113-putting-custom-image-prediction-together-building-a-function). 
+    * To see example prediction code, check out the [predicting on a custom image section in notebook 04](https://www.learnpytorch.io/04_pytorch_custom_datasets/#113-putting-custom-image-prediction-together-building-a-function).
     * You may also have to write code to load in a trained model.
 
 ## Extra-curriculum
 
-* To learn more about structuring a Python project, check out Real Python's guide on [Python Application Layouts](https://realpython.com/python-application-layouts/). 
+* To learn more about structuring a Python project, check out Real Python's guide on [Python Application Layouts](https://realpython.com/python-application-layouts/).
 * For ideas on styling your PyTorch code, check out the [PyTorch style guide by Igor Susmelj](https://github.com/IgorSusmelj/pytorch-styleguide#recommended-code-structure-for-training-your-model) (much of styling in this chapter is based off this guide + various similar PyTorch repositories).
-* For an example `train.py` script and various other PyTorch scripts written by the PyTorch team to train state-of-the-art image classification models, check out their [`classification` repository on GitHub](https://github.com/pytorch/vision/tree/main/references/classification). 
+* For an example `train.py` script and various other PyTorch scripts written by the PyTorch team to train state-of-the-art image classification models, check out their [`classification` repository on GitHub](https://github.com/pytorch/vision/tree/main/references/classification).

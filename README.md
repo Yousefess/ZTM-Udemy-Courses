@@ -4,7 +4,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/Yousefess/PyTorchforDeepLearning)
 ![GitHub top language](https://img.shields.io/github/languages/top/Yousefess/PyTorchforDeepLearning)
 
-This repository contains the code for the some courses that i have taken, by [Andrei Neagoie](https://github.com/abetlen), [Daniel Bourke](https://github.com/mrdbourke), [Diogo Resende](https://www.linkedin.com/in/diogoalvesderesende/) and [Mo Binni](https://github.com/mobinni) in the [ZTM Academy](https://zerotomastery.io/). The courses are:
+This repository contains the code for the some courses that i have taken, by [Andrei Neagoie](https://github.com/aneagoie), [Daniel Bourke](https://github.com/mrdbourke), [Diogo Resende](https://www.linkedin.com/in/diogoalvesderesende/) and [Mo Binni](https://github.com/mobinni) in the [ZTM Academy](https://zerotomastery.io/). The courses are:
 
 1. [Complete A.I. Machine Learning and Data Science: Zero to Mastery](https://zerotomastery.io/courses/machine-learning-and-data-science-bootcamp/)
 2. [PyTorch for Deep Learning in 2024](https://zerotomastery.io/courses/learn-pytorch/)
@@ -38,4 +38,6 @@ This repository contains the code for the some courses that i have taken, by [An
 
 | No. | Sections | Parts |
 | :---: | :--------: | :-----: |
-| 00 | [Exploratory Data Analysis](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python/01%20Exploratory%20Data%20Analysis) | [EDA](https://github.com/Yousefess/ZTM-Courses/blob/main/04%20Time%20Series%20Forecasting%20with%20Python/01%20Exploratory%20Data%20Analysis/EDA.ipynb) |
+| 01 | [Exploratory Data Analysis](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python/01%20Exploratory%20Data%20Analysis) | [EDA](https://github.com/Yousefess/ZTM-Courses/blob/main/04%20Time%20Series%20Forecasting%20with%20Python/01%20Exploratory%20Data%20Analysis/EDA.ipynb) |
+| 02 | [Parameter Tuning](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python/02%20Parameter%20Tuning) | [01 Facebook Prophet](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python/02%20Parameter%20Tuning/01%20Facebook%20Prophet) + [02 SARIMAX](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python/02%20Parameter%20Tuning/02%20SARIMAX) |
+| 03 | [Forecasting Product](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python/02%20Parameter%20Tuning) | [01 Facebook Prophet](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python/02%20Parameter%20Tuning/01%20Facebook%20Prophet) + [02 SARIMAX](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python/02%20Parameter%20Tuning/02%20SARIMAX) |

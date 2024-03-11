@@ -1,0 +1,2 @@
+-- coalesce(<column>, value)
+-- ability to replace NULL values to operate on the data

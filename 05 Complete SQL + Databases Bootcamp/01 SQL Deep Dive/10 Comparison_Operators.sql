@@ -1,0 +1,6 @@
+-- = : EQUAL
+-- !=, <> : NOT EQUAL
+-- > : GREATER
+-- < : LESS
+-- >= : GREATER OR EQUAL
+-- <= : LESS OR EQUAL

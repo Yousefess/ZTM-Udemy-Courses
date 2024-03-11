@@ -107,3 +107,73 @@ OR (first_name = 'Bezalel' AND last_name = 'Simmel');
 SELECT COUNT(*) FROM customers
 WHERE gender = 'F' AND (state = 'OR' OR state = 'NY')
 ```
+
+## 09 The NOT Keyword
+
+```SQL
+-- Question
+-- How many customers aren't 55?
+SELECT COUNT(*) FROM customers
+WHERE NOT age = 55;
+```
+
+## 10 Comparison Operators
+
+```SQL
+-- = : EQUAL
+-- !=, <> : NOT EQUAL
+-- > : GREATER
+-- < : LESS
+-- >= : GREATER OR EQUAL
+-- <= : LESS OR EQUAL
+```
+
+## 11 Checking For NULL Values
+
+```SQL
+SELECT NULL = NULL;
+SELECT 1 = 1
+```
+
+## 12 NULL Coalescing
+
+```SQL
+-- coalesce(<column>, value)
+-- ability to replace NULL values to operate on the data
+```
+
+## 13 IN Keyword
+
+```SQL
+SELECT * FROM employees
+WHERE emp_no IN (10001, 10006, 11008);
+```
+
+## 14 LIKE
+
+```SQL
+-- LIKE '%2' - Fields that end with 2
+-- LIKE '%2%' - Fields that have 2 anywhere in the value
+-- LIKE '_00%' - Fields that have 2 zero's as the second and third character and anything after
+-- LIKE '%200%' - Fields that have 200 anywhere in the value
+-- LIKE '2_%_%' - Finds any values that start with 2 and are at least 3 characters in length
+-- LIKE '2___3' - Finds any values in a five-digit number that start with 2 and end with 3
+
+-- Casting is the act of changing something to something else
+-- CAST(salary AS text)
+-- salary::text
+
+SELECT * FROM employees
+WHERE first_name LIKE 'G%ger';
+
+SELECT * FROM employees
+WHERE first_name ILIKE 'G%GER';
+-- ILIKE - is not casesensitive
+```
+
+## 15 TIMEZONE
+
+```SQL
+SHOW TIMEZONE;
+SET TIME ZONE 'UTC';
+```

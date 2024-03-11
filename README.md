@@ -16,7 +16,7 @@ This repository contains the code for the some courses that i have taken, by [An
 
 ## Table of Contents
 
-### 02 PyTorch for Deep Learning in 2024
+### [02 PyTorch for Deep Learning in 2024](https://github.com/Yousefess/ZTM-Courses/tree/main/02%20PyTorch%20for%20Deep%20Learning%20in%202024)
 
 | No. | Sections | My code (watching videos) | Course original code | Exercises & Extra-curriculum |
 | :---: | :--------: | :-------: | :-------------: | :---------: |
@@ -34,7 +34,7 @@ This repository contains the code for the some courses that i have taken, by [An
 
 ---
 
-### 04 Time Series Forecasting with Python
+### [04 Time Series Forecasting with Python](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python)
 
 | No. | Sections | Parts |
 | :---: | :--------: | :-----: |
@@ -45,7 +45,7 @@ This repository contains the code for the some courses that i have taken, by [An
 
 ---
 
-### 05 Complete SQL + Databases Bootcamp
+### [05 Complete SQL + Databases Bootcamp](https://github.com/Yousefess/ZTM-Courses/tree/main/05%20Complete%20SQL%20%2B%20Databases%20Bootcamp)
 
 | No. | Sections |
 | :---: | :--------: |

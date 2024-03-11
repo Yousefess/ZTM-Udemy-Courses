@@ -78,3 +78,32 @@ and focus the filttering on a single person
 */
 WHERE first_name = 'Mayumi' AND last_name = 'Schueller';
 ```
+
+## 06 Filtering Data
+
+```SQL
+-- Question
+-- Get the list of all female employees
+
+SELECT first_name FROM employees
+WHERE gender = 'F';
+```
+
+## 07 AND and OR
+
+```SQL
+SELECT first_name, last_name, hire_date FROM employees
+WHERE (first_name = 'Georgi' AND last_name = 'Facello' AND hire_date = '1986-06-26')
+OR (first_name = 'Bezalel' AND last_name = 'Simmel');
+```
+
+## 08 Exercise Filtering Data
+
+```SQL
+-- Question
+-- How many female customers do we have the state of Oregon (OR)
+-- AND New York (NY)
+
+SELECT COUNT(*) FROM customers
+WHERE gender = 'F' AND (state = 'OR' OR state = 'NY')
+```

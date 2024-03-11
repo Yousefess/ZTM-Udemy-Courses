@@ -42,3 +42,11 @@ This repository contains the code for the some courses that i have taken, by [An
 | 02 | [Parameter Tuning](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python/02%20Parameter%20Tuning) | [01 Facebook Prophet](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python/02%20Parameter%20Tuning/01%20Facebook%20Prophet) + [02 SARIMAX](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python/02%20Parameter%20Tuning/02%20SARIMAX) + [03 Linkedin Silverkite](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python/02%20Parameter%20Tuning/03%20Linkedin%20Silverkite) + [04 RNN-LSTM](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python/03%20Forecasting%20Product/04%20RNN-LSTM)|
 | 03 | [Forecasting Product](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python/02%20Parameter%20Tuning) | [01 Facebook Prophet](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python/02%20Parameter%20Tuning/01%20Facebook%20Prophet) + [02 SARIMAX](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python/02%20Parameter%20Tuning/02%20SARIMAX) + [03 Linkedin Silverkite](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python/03%20Forecasting%20Product/03%20Linkedin%20Silverkite) + [04 RNN-LSTM](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python/02%20Parameter%20Tuning/04%20RNN-LSTM)|
 | 04 | [Ensemble](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python/04%20Ensemble) | [Ensemble](https://github.com/Yousefess/ZTM-Courses/blob/main/04%20Time%20Series%20Forecasting%20with%20Python/04%20Ensemble/Ensemble.ipynb) |
+
+---
+
+### 05 Complete SQL + Databases Bootcamp
+
+| No. | Sections |
+| :---: | :--------: |
+| 01 | [SQL Deep Dive](https://github.com/Yousefess/ZTM-Courses/tree/main/05%20Complete%20SQL%20%2B%20Databases%20Bootcamp/01%20SQL%20Deep%20Dive) |

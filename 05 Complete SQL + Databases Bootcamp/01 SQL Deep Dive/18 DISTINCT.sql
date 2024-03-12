@@ -1,0 +1,1 @@
+SELECT DISTINCT salary, from_date FROM salaries;

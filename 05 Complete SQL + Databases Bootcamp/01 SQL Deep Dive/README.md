@@ -176,4 +176,162 @@ WHERE first_name ILIKE 'G%GER';
 ```SQL
 SHOW TIMEZONE;
 SET TIME ZONE 'UTC';
+ALTER USER postgres SET timezone = 'UTC;
 ```
+
+## 16 Timestamps
+
+```SQL
+CREATE TABLE timezone(
+ ts TIMESTAMP WITHOUT TIME ZONE,
+ tz TIMESTAMP WITH TIME ZONE
+);
+
+INSERT INTO timezone VALUES(
+ TIMESTAMP WITHOUT TIME ZONE '2000-01-01 10:00:00-05',
+ TIMESTAMP WITH TIME ZONE '2000-01-01 10:00:00-05'
+);
+
+SELECT * FROM timezone;
+```
+
+## 17 Date Functions
+
+```SQL
+SELECT now()::date;
+SELECT CURRENT_DATE;
+
+SELECT TO_CHAR(CURRENT_DATE, 'dd/mm/yyyy');
+SELECT TO_CHAR(CURRENT_DATE, 'DDD');
+SELECT TO_CHAR(CURRENT_DATE, 'IDDD');
+SELECT TO_CHAR(CURRENT_DATE, 'WW');
+
+SELECT now() - '1800/01/01';
+
+-- Calculate the age
+SELECT AGE(date '1800-01-01');
+SELECT AGE(date '1920-01-01', date '1800-01-01');
+
+-- Extract information
+SELECT EXTRACT(DAY FROM date '1992/11/13') AS DAY;
+SELECT EXTRACT(MONTH FROM date '1992/11/13') AS MONTH;
+SELECT EXTRACT(YEAR FROM date '1992/11/13') AS YEAR;
+
+-- round the date
+SELECT DATE_TRUNC('year', date '1992/11/13');
+SELECT DATE_TRUNC('month', date '1992/11/13');
+SELECT DATE_TRUNC('day', date '1992/11/13');
+
+-- interval
+-- allows us to write queries in a way that mirrors language
+SELECT *
+FROM <table_name>
+WHERE purchaseDate <= now() - INTERVAL '30 days'
+
+INTERVAL '1 year 2 months 3 days';
+INTERVAL '2 weeks ago';
+INTERVAL '1 year 3 hours 20 minutes';
+
+SELECT
+    EXTRACT(
+        year
+        FROM
+            INTERVAL '5 years 20 months'
+    ) -- 6
+```
+
+## 18 DISTINCT
+
+```SQL
+SELECT DISTINCT salary, from_date FROM salaries;
+```
+
+## 19 Sorting Data
+
+```SQL
+SELECT first_name, last_name FROM employees
+ORDER BY first_name, last_name DESC;
+
+SELECT first_name, last_name FROM employees
+ORDER BY LENGTH(first_name) DESC;
+```
+
+## 20 Join
+
+```SQL
+SELECT a.emp_no, b.salary
+FROM employees as a, salaries as b
+WHERE a.emp_no = b.emp_no;
+
+-- INNER JOIN
+SELECT a.emp_no, b.salary
+FROM employees as a
+INNER JOIN salaries as b ON b.emp_no = a.emp_no;
+
+--
+SELECT a.emp_no,
+	   CONCAT(a.firs_name, a.last_name) AS "name",
+	   b.salary,
+	   c.title,
+	   c.from_date AS "promoted on"
+FROM employees AS a
+INNER JOIN salaries AS b ON a.emp_no = b.emp_no
+INNER JOIN titles AS c ON c.emp_no = a.emp_no
+AND c.from_date = (b.from_date + interval '2 days')
+ORDER BY a.emp_no;
+
+--
+SELECT a.emp_no,
+	   CONCAT(a.firs_name, a.last_name) AS "name",
+	   b.salary,
+	   COALESCE(c.title, 'NO title change'),
+	   COALESCE(c.from_date::text, '-') AS "title taken on"
+FROM employees AS a
+INNER JOIN salaries AS b ON a.emp_no = b.emp_no
+INNER JOIN titles AS c
+ON c.emp_no = a.emp_no AND (
+	c.from_date = (b.from_date + interval '2 days') OR
+	c.from_date = b.from_date
+)
+ORDER BY a.emp_no;
+
+-- SELF JOIN
+SELECT a.id, a.name AS "employee", b.name AS "supervisor name"
+FROM employee AS a, employee AS b
+WHERE a.sipervisorId = b.id;
+
+-- OUTER JOIN
+SELECT COUNT(emp.emp_no)
+FROM employee AS emp
+LEFT JOIN dept_manager AS dep ON emp.emp_no = dep.emp_no
+WHERE dep.emp_no IS NULL;
+
+--
+SELECT a. emp_no,
+	   CONCAT(a.first_name, a. last_name) as "name",
+	   b.salary,
+	   coalesce(c.title, 'No title change'),
+	   COALESCE(c.from_date: : text, '-') AS "title taken on"
+FROM employees AS a
+INNER JOIN salaries AS b ON a.emp_no = b.emp_no
+LEFT JOIN titles AS c
+ON c.emp_no = a.emp_no AND (
+   c.from_date = (b.from_date + interval '2 days' ) OR
+   c.from_date = b.from_date
+)
+ORDER BY a.emp_no;
+
+-- CROSS JOIN
+-- create a combination of every row
+
+-- FULL JOIN
+-- return result from both whether they match or not
+
+--
+SELECT e.emp_no, e.first_name, de.dept_no, d.dept_name
+FROM employees AS e
+INNER JOIN dept_emp AS de USING(emp_no)
+INNER JOIN departments AS d USING(dept_no)
+```
+
+![Join](../Images/joins.png)

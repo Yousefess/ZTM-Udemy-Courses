@@ -1,10 +1,10 @@
-# Zero To Mastery Courses
+# Zero To Mastery and Udemy Courses
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/Yousefess/PyTorchforDeepLearning)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Yousefess/PyTorchforDeepLearning)
 ![GitHub top language](https://img.shields.io/github/languages/top/Yousefess/PyTorchforDeepLearning)
 
-This repository contains the code for the some courses that i have taken, by [Andrei Neagoie](https://github.com/aneagoie), [Daniel Bourke](https://github.com/mrdbourke), [Diogo Resende](https://www.linkedin.com/in/diogoalvesderesende/) and [Mo Binni](https://github.com/mobinni) in the [ZTM Academy](https://zerotomastery.io/). The courses are:
+This repository contains the code for the some courses that i have taken, by [Andrei Neagoie](https://github.com/aneagoie), [Daniel Bourke](https://github.com/mrdbourke) and [Diogo Resende](https://www.linkedin.com/in/diogoalvesderesende/) in the [ZTM Academy](https://zerotomastery.io/) and Some courses by [Adnan Waheed](https://www.linkedin.com/in/adnanwaheedali/) in [Udemy](https://www.udemy.com/). The courses are:
 
 1. [Complete A.I. Machine Learning and Data Science: Zero to Mastery](https://zerotomastery.io/courses/machine-learning-and-data-science-bootcamp/)
 2. [PyTorch for Deep Learning in 2024](https://zerotomastery.io/courses/learn-pytorch/)
@@ -12,7 +12,11 @@ This repository contains the code for the some courses that i have taken, by [An
 
 4. [Time Series Forecasting with Python](https://zerotomastery.io/courses/time-series-forecasting/)
 
-5. [Complete SQL + Databases Bootcamp](https://zerotomastery.io/courses/sql-bootcamp/)
+5. [PostgreSQL Bootcamp : Go From Beginner to Advanced, 60+hours](https://www.udemy.com/course/postgresqlmasterclass/?couponCode=ST15MT31224)
+
+6. [Master Vector Databases](https://www.udemy.com/course/master-vector-databases/?couponCode=ST15MT31224)
+
+7. [Master SQL - Simple to advanced 200+ queries](https://www.udemy.com/course/master-sql-queries/?couponCode=ST15MT31224)
 
 ## Table of Contents
 
@@ -44,9 +48,3 @@ This repository contains the code for the some courses that i have taken, by [An
 | 04 | [Ensemble](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python/04%20Ensemble) | [Ensemble](https://github.com/Yousefess/ZTM-Courses/blob/main/04%20Time%20Series%20Forecasting%20with%20Python/04%20Ensemble/Ensemble.ipynb) |
 
 ---
-
-### [05 Complete SQL + Databases Bootcamp](https://github.com/Yousefess/ZTM-Courses/tree/main/05%20Complete%20SQL%20%2B%20Databases%20Bootcamp)
-
-| No. | Sections |
-| :---: | :--------: |
-| 01 | [SQL Deep Dive](https://github.com/Yousefess/ZTM-Courses/tree/main/05%20Complete%20SQL%20%2B%20Databases%20Bootcamp/01%20SQL%20Deep%20Dive) |

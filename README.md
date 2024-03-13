@@ -20,6 +20,14 @@ This repository contains the code for the some courses that i have taken, by [An
 
 ## Table of Contents
 
+### [01 Complete A.I. Machine Learning and Data Science: Zero to Mastery](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/01%20Complete%20A.I.%20Machine%20Learning%20and%20Data%20Science%20-%20Zero%20to%20Mastery)
+
+| No. | Sections | My code (watching videos) | Course original code | Exercises & Extra-curriculum |
+| :---: | :--------: | :-------: | :-------------: | :---------: |
+| 01 | [Data Science and Ml Tools](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/01%20Complete%20A.I.%20Machine%20Learning%20and%20Data%20Science%20-%20Zero%20to%20Mastery/01%20data%20science%20and%20ml%20tools) | [Pandas](https://github.com/Yousefess/ZTM-Udemy-Courses/blob/main/01%20Complete%20A.I.%20Machine%20Learning%20and%20Data%20Science%20-%20Zero%20to%20Mastery/01%20data%20science%20and%20ml%20tools/01%20Pandas/introduction-to-pandas.ipynb) | [Pandas]() | [Pandas]() |
+
+---
+
 ### [02 PyTorch for Deep Learning in 2024](https://github.com/Yousefess/ZTM-Courses/tree/main/02%20PyTorch%20for%20Deep%20Learning%20in%202024)
 
 | No. | Sections | My code (watching videos) | Course original code | Exercises & Extra-curriculum |

@@ -50,9 +50,9 @@ This repository contains the code for the some courses that i have taken, by [An
 
 ### [03 TensorFlow Developer Certificate in 2024](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/03%20TensorFlow%20Developer%20Certificate%20in%202024)
 
-| No. | Sections | My code (watching videos) | Course original code |
-| :---: | :--------: | :-------: | :-------------: |
-| 00 | [TensorFlow Fundamentals](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/03%20TensorFlow%20Developer%20Certificate%20in%202024/00%20TensorFlow%20Fundamentals) | [Go to my code](https://github.com/Yousefess/ZTM-Udemy-Courses/blob/main/03%20TensorFlow%20Developer%20Certificate%20in%202024/00%20TensorFlow%20Fundamentals/00_tensorflow_fundamentals.ipynb) | [Go to original code](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/03%20TensorFlow%20Developer%20Certificate%20in%202024/00%20TensorFlow%20Fundamentals/original%20code) |
+| No. | Sections | My code (watching videos) | Course original code | Exercises & Extra-curriculum |
+| :---: | :--------: | :-------: | :-------------: | :---------: |
+| 00 | [TensorFlow Fundamentals](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/03%20TensorFlow%20Developer%20Certificate%20in%202024/00%20TensorFlow%20Fundamentals) | [Go to my code](https://github.com/Yousefess/ZTM-Udemy-Courses/blob/main/03%20TensorFlow%20Developer%20Certificate%20in%202024/00%20TensorFlow%20Fundamentals/00_tensorflow_fundamentals.ipynb) | [Go to original code](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/03%20TensorFlow%20Developer%20Certificate%20in%202024/00%20TensorFlow%20Fundamentals/original%20code) | [Go to exercises & Extra-curriculum](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/03%20TensorFlow%20Developer%20Certificate%20in%202024/00%20TensorFlow%20Fundamentals/exercises) |
 
 ---
 

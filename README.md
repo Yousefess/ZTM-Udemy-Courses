@@ -20,7 +20,7 @@ This repository contains the code for the some courses that i have taken, by [An
 
 ## Table of Contents
 
-### [01 Complete A.I. Machine Learning and Data Science: Zero to Mastery](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/01%20Complete%20A.I.%20Machine%20Learning%20and%20Data%20Science%20-%20Zero%20to%20Mastery)
+### [01 - Complete A.I. Machine Learning and Data Science: Zero to Mastery](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/01%20Complete%20A.I.%20Machine%20Learning%20and%20Data%20Science%20-%20Zero%20to%20Mastery)
 
 | No. | Sections | My code (watching videos) | Course original code | Exercises & Extra-curriculum |
 | :---: | :--------: | :-------: | :-------------: | :---------: |
@@ -30,7 +30,7 @@ This repository contains the code for the some courses that i have taken, by [An
 
 ---
 
-### [02 PyTorch for Deep Learning in 2024](https://github.com/Yousefess/ZTM-Courses/tree/main/02%20PyTorch%20for%20Deep%20Learning%20in%202024)
+### [02 - PyTorch for Deep Learning in 2024](https://github.com/Yousefess/ZTM-Courses/tree/main/02%20PyTorch%20for%20Deep%20Learning%20in%202024)
 
 | No. | Sections | My code (watching videos) | Course original code | Exercises & Extra-curriculum |
 | :---: | :--------: | :-------: | :-------------: | :---------: |
@@ -48,7 +48,7 @@ This repository contains the code for the some courses that i have taken, by [An
 
 ---
 
-### [03 TensorFlow Developer Certificate in 2024](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/03%20TensorFlow%20Developer%20Certificate%20in%202024)
+### [03 - TensorFlow Developer Certificate in 2024](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/03%20TensorFlow%20Developer%20Certificate%20in%202024)
 
 | No. | Sections | My code (watching videos) | Course original code | Exercises & Extra-curriculum |
 | :---: | :--------: | :-------: | :-------------: | :---------: |
@@ -66,7 +66,7 @@ This repository contains the code for the some courses that i have taken, by [An
 
 ---
 
-### [04 Time Series Forecasting with Python](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python)
+### [04 - Time Series Forecasting with Python](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python)
 
 | No. | Sections | Parts |
 | :---: | :--------: | :-----: |
@@ -76,3 +76,9 @@ This repository contains the code for the some courses that i have taken, by [An
 | 04 | [Ensemble](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python/04%20Ensemble) | [Ensemble](https://github.com/Yousefess/ZTM-Courses/blob/main/04%20Time%20Series%20Forecasting%20with%20Python/04%20Ensemble/Ensemble.ipynb) |
 
 ---
+
+### [05 - PostgreSQL Bootcamp: Go From Beginner to Advanced, 60+hours](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/05%20PostgreSQL%20Bootcamp%20-%20Go%20From%20Beginner%20to%20Advanced)
+
+| No. | Sections | No. | Sections | No. | Sections |
+| :---: | :--------: | :---: | :--------: | :---: | :--------: |
+| 01 | [Introduction to PostgreSQL](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/05%20PostgreSQL%20Bootcamp%20-%20Go%20From%20Beginner%20to%20Advanced/01%20Introduction%20to%20PostgreSQL) | | | | |

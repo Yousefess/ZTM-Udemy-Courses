@@ -18,6 +18,8 @@ This repository contains the code for the some courses that i have taken, by [An
 
 7. [Master SQL - Simple to advanced 200+ queries](https://www.udemy.com/course/master-sql-queries/?couponCode=ST15MT31224)
 
+8. [Mega Python - Pandas, Numpy, ML, APIs, GraphQL, AWS, PySpark](https://www.udemy.com/course/mega-python/?couponCode=LETSLEARNNOWPP)
+
 ## Table of Contents
 
 ### [01 - Complete A.I. Machine Learning and Data Science: Zero to Mastery](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/01%20Complete%20A.I.%20Machine%20Learning%20and%20Data%20Science%20-%20Zero%20to%20Mastery)
@@ -81,4 +83,4 @@ This repository contains the code for the some courses that i have taken, by [An
 
 | No. | Sections | No. | Sections | No. | Sections |
 | :---: | :--------: | :---: | :--------: | :---: | :--------: |
-| 01 | [Introduction to PostgreSQL](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/05%20PostgreSQL%20Bootcamp%20-%20Go%20From%20Beginner%20to%20Advanced/01%20Introduction%20to%20PostgreSQL) | | | | |
+| 01 | [Introduction to PostgreSQL](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/05%20PostgreSQL%20Bootcamp%20-%20Go%20From%20Beginner%20to%20Advanced/01%20Introduction%20to%20PostgreSQL) | 02 | [Creating and Modifying Tables](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/05%20PostgreSQL%20Bootcamp%20-%20Go%20From%20Beginner%20to%20Advanced/02%20Creating%20and%20Modifying%20Tables) | | |

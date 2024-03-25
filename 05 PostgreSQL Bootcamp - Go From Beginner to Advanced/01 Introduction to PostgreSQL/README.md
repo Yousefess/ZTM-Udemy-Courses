@@ -10,9 +10,9 @@
 -- ----------------------------
 DROP TABLE IF EXISTS "public"."customers";
 CREATE TABLE "public"."customers" (
-	"customer_id" int4 NOT NULL,
-	"first_name" varchar(100) COLLATE "default",
-	"last_name" varchar(255) COLLATE "default"
+ "customer_id" int4 NOT NULL,
+ "first_name" varchar(100) COLLATE "default",
+ "last_name" varchar(255) COLLATE "default"
 )
 WITH (OIDS=FALSE);
 
@@ -42,9 +42,9 @@ ALTER TABLE "public"."customers" ADD PRIMARY KEY ("customer_id") NOT DEFERRABLE 
 -- ----------------------------
 DROP TABLE IF EXISTS "public"."products";
 CREATE TABLE "public"."products" (
-	"product_id" int4 NOT NULL,
-	"product_name" varchar(255) NOT NULL COLLATE "default",
-	"unit_price" numeric(10,2)
+ "product_id" int4 NOT NULL,
+ "product_name" varchar(255) NOT NULL COLLATE "default",
+ "unit_price" numeric(10,2)
 )
 WITH (OIDS=FALSE);
 
@@ -75,9 +75,9 @@ ALTER TABLE "public"."products" ADD PRIMARY KEY ("product_id") NOT DEFERRABLE IN
 -- ----------------------------
 DROP TABLE IF EXISTS "public"."purchases";
 CREATE TABLE "public"."purchases" (
-	"purchase_id" int4 NOT NULL,
-	"product_id" int4,
-	"customer_id" int4
+ "purchase_id" int4 NOT NULL,
+ "product_id" int4,
+ "customer_id" int4
 )
 WITH (OIDS=FALSE);
 
@@ -461,11 +461,11 @@ COMMIT;
 -- ----------------------------
 DROP TABLE IF EXISTS "public"."stocks_symbols";
 CREATE TABLE "public"."stocks_symbols" (
-	"symbol_id" int4 NOT NULL,
-	"symbol" varchar(50) NOT NULL COLLATE "default",
-	"symbol_name" varchar(255) NOT NULL COLLATE "default",
-	"symbol_type_code" varchar(10) NOT NULL COLLATE "default",
-	"symbol_sector" varchar(255) NOT NULL COLLATE "default"
+ "symbol_id" int4 NOT NULL,
+ "symbol" varchar(50) NOT NULL COLLATE "default",
+ "symbol_name" varchar(255) NOT NULL COLLATE "default",
+ "symbol_type_code" varchar(10) NOT NULL COLLATE "default",
+ "symbol_sector" varchar(255) NOT NULL COLLATE "default"
 )
 WITH (OIDS=FALSE);
 
@@ -504,9 +504,9 @@ ALTER TABLE "public"."stocks_symbols" ADD PRIMARY KEY ("symbol_id") NOT DEFERRAB
 -- ----------------------------
 DROP TABLE IF EXISTS "public"."stocks_types";
 CREATE TABLE "public"."stocks_types" (
-	"type_id" int4 NOT NULL,
-	"type_code" varchar(10) NOT NULL COLLATE "default",
-	"type_name" varchar(255) NOT NULL COLLATE "default"
+ "type_id" int4 NOT NULL,
+ "type_code" varchar(10) NOT NULL COLLATE "default",
+ "type_name" varchar(255) NOT NULL COLLATE "default"
 )
 WITH (OIDS=FALSE);
 

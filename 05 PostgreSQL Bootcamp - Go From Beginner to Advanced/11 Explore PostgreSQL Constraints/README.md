@@ -32,7 +32,7 @@
 
 ```sql
 -- NOT NULL constraints
--- ####################
+-- ###################
 
 /*
  1. NULL represents unknown or information missing.

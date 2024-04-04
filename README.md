@@ -4,7 +4,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/Yousefess/PyTorchforDeepLearning)
 ![GitHub top language](https://img.shields.io/github/languages/top/Yousefess/PyTorchforDeepLearning)
 
-This repository contains the code for the some courses that i have taken, by [Andrei Neagoie](https://github.com/aneagoie), [Daniel Bourke](https://github.com/mrdbourke) and [Diogo Resende](https://www.linkedin.com/in/diogoalvesderesende/) in the [ZTM Academy](https://zerotomastery.io/) and some courses by [Adnan Waheed](https://www.linkedin.com/in/adnanwaheedali/) in [Udemy](https://www.udemy.com/). The courses are:
+This repository contains the code for the some courses that i have taken, by [Andrei Neagoie](https://github.com/aneagoie), [Daniel Bourke](https://github.com/mrdbourke) and [Diogo Resende](https://www.linkedin.com/in/diogoalvesderesende/) in the [ZTM Academy](https://zerotomastery.io/) and some courses by [Adnan Waheed](https://www.linkedin.com/in/adnanwaheedali/) and [Bret Fisher](https://github.com/BretFisher) in [Udemy](https://www.udemy.com/). The courses are:
 
 1. [Complete A.I. Machine Learning and Data Science: Zero to Mastery](https://zerotomastery.io/courses/machine-learning-and-data-science-bootcamp/)
 2. [PyTorch for Deep Learning in 2024](https://zerotomastery.io/courses/learn-pytorch/)
@@ -18,7 +18,9 @@ This repository contains the code for the some courses that i have taken, by [An
 
 7. [Master SQL - Simple to advanced 200+ queries](https://www.udemy.com/course/master-sql-queries/?couponCode=ST15MT31224)
 
-8. [Mega Python - Pandas, Numpy, ML, APIs, GraphQL, AWS, PySpark](https://www.udemy.com/course/mega-python/?couponCode=LETSLEARNNOWPP)
+8. [Master Redis - From Beginner to Advanced, 20+ hours](https://www.udemy.com/course/masterredis/?couponCode=ST13MT40224)
+
+9. [Docker Mastery: with Kubernetes +Swarm from a Docker Captain](https://www.udemy.com/course/docker-mastery/?couponCode=ST13MT40224)
 
 ## Table of Contents
 

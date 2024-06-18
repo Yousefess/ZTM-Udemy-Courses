@@ -4,23 +4,13 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/Yousefess/PyTorchforDeepLearning)
 ![GitHub top language](https://img.shields.io/github/languages/top/Yousefess/PyTorchforDeepLearning)
 
-This repository contains the code for the some courses that i have taken, by [Andrei Neagoie](https://github.com/aneagoie), [Daniel Bourke](https://github.com/mrdbourke) and [Diogo Resende](https://www.linkedin.com/in/diogoalvesderesende/) in the [ZTM Academy](https://zerotomastery.io/) and some courses by [Adnan Waheed](https://www.linkedin.com/in/adnanwaheedali/) and [Bret Fisher](https://github.com/BretFisher) in [Udemy](https://www.udemy.com/). The courses are:
+This repository contains the code for the some courses that i have taken, by [Andrei Neagoie](https://github.com/aneagoie), [Daniel Bourke](https://github.com/mrdbourke) and [Diogo Resende](https://www.linkedin.com/in/diogoalvesderesende/) in the [ZTM Academy](https://zerotomastery.io/). The courses are:
 
 1. [Complete A.I. Machine Learning and Data Science: Zero to Mastery](https://zerotomastery.io/courses/machine-learning-and-data-science-bootcamp/)
 2. [PyTorch for Deep Learning in 2024](https://zerotomastery.io/courses/learn-pytorch/)
 3. [TensorFlow Developer Certificate in 2024](https://zerotomastery.io/courses/learn-tensorflow/)
 
 4. [Time Series Forecasting with Python](https://zerotomastery.io/courses/time-series-forecasting/)
-
-5. [PostgreSQL Bootcamp : Go From Beginner to Advanced, 60+hours](https://www.udemy.com/course/postgresqlmasterclass/?couponCode=ST15MT31224)
-
-6. [Master Vector Databases](https://www.udemy.com/course/master-vector-databases/?couponCode=ST15MT31224)
-
-7. [Master SQL - Simple to advanced 200+ queries](https://www.udemy.com/course/master-sql-queries/?couponCode=ST15MT31224)
-
-8. [Master Redis - From Beginner to Advanced, 20+ hours](https://www.udemy.com/course/masterredis/?couponCode=ST13MT40224)
-
-9. [Docker Mastery: with Kubernetes +Swarm from a Docker Captain](https://www.udemy.com/course/docker-mastery/?couponCode=ST13MT40224)
 
 ## Table of Contents
 
@@ -80,13 +70,3 @@ This repository contains the code for the some courses that i have taken, by [An
 | 04 | [Ensemble](https://github.com/Yousefess/ZTM-Courses/tree/main/04%20Time%20Series%20Forecasting%20with%20Python/04%20Ensemble) | [Ensemble](https://github.com/Yousefess/ZTM-Courses/blob/main/04%20Time%20Series%20Forecasting%20with%20Python/04%20Ensemble/Ensemble.ipynb) |
 
 ---
-
-### [05 - PostgreSQL Bootcamp: Go From Beginner to Advanced, 60+hours](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/05%20PostgreSQL%20Bootcamp%20-%20Go%20From%20Beginner%20to%20Advanced)
-
-| No. | Sections | No. | Sections | No. | Sections |
-| :---: | :--------: | :---: | :--------: | :---: | :--------: |
-| 01 | [Introduction to PostgreSQL](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/05%20PostgreSQL%20Bootcamp%20-%20Go%20From%20Beginner%20to%20Advanced/01%20Introduction%20to%20PostgreSQL) | 02 | [Creating and Modifying Tables](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/05%20PostgreSQL%20Bootcamp%20-%20Go%20From%20Beginner%20to%20Advanced/02%20Creating%20and%20Modifying%20Tables) | 03 | [Modifying Data in the tables](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/05%20PostgreSQL%20Bootcamp%20-%20Go%20From%20Beginner%20to%20Advanced/03%20Modifying%20Data%20in%20the%20tables) |
-| 04 | [Querying Data](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/05%20PostgreSQL%20Bootcamp%20-%20Go%20From%20Beginner%20to%20Advanced/04%20Querying%20Data) | 05 | [Filtering Data](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/05%20PostgreSQL%20Bootcamp%20-%20Go%20From%20Beginner%20to%20Advanced/05%20Filtering%20Data) | 06 | [PostgreSQL Data types](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/05%20PostgreSQL%20Bootcamp%20-%20Go%20From%20Beginner%20to%20Advanced/06%20PostgreSQL%20Data%20types) |
-| 07 | [Modifying Table Structures, Add constraints](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/05%20PostgreSQL%20Bootcamp%20-%20Go%20From%20Beginner%20to%20Advanced/07%20Modifying%20Table%20Structures%2C%20Add%20constraints) | 08 | [Data type conversions](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/05%20PostgreSQL%20Bootcamp%20-%20Go%20From%20Beginner%20to%20Advanced/08%20Data%20type%20conversions) | 09 | [Conversion Functions](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/05%20PostgreSQL%20Bootcamp%20-%20Go%20From%20Beginner%20to%20Advanced/09%20Conversion%20Functions) |
-| 10 | [User-defined Data Types](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/05%20PostgreSQL%20Bootcamp%20-%20Go%20From%20Beginner%20to%20Advanced/10%20User-defined%20Data%20Types) | 11 | [Explore PostgreSQL Constraints](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/05%20PostgreSQL%20Bootcamp%20-%20Go%20From%20Beginner%20to%20Advanced/11%20Explore%20PostgreSQL%20Constraints) | 12 | [PostgreSQL Sequences](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/05%20PostgreSQL%20Bootcamp%20-%20Go%20From%20Beginner%20to%20Advanced/12%20PostgreSQL%20Sequences) |
-| 13 | [String Functions](https://github.com/Yousefess/ZTM-Udemy-Courses/tree/main/05%20PostgreSQL%20Bootcamp%20-%20Go%20From%20Beginner%20to%20Advanced/13%20String%20Functions) | []() | []() |
